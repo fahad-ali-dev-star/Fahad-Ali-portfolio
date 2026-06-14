@@ -30,7 +30,7 @@ const Footer = () => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-[#00d4ff] hover:bg-[#00d4ff]/10 transition-all duration-300"
+                className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-[#ff0844] hover:bg-[#ff0844]/10 transition-all duration-300"
                 aria-label={social.label}
               >
                 <social.icon size={20} />
@@ -41,7 +41,7 @@ const Footer = () => {
           {/* Email */}
           <a
             href="mailto:gabruff633@gmail.com"
-            className="text-gray-400 hover:text-[#00d4ff] transition-colors duration-300 mb-6"
+            className="text-gray-400 hover:text-[#ff0844] transition-colors duration-300 mb-6"
           >
             gabruff633@gmail.com
           </a>

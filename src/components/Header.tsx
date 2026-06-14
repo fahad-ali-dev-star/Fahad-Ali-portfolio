@@ -52,7 +52,7 @@ const Header = () => {
           >
             <span className="text-white">Fahad</span>
             <span className="text-[#ff0844]">.</span>
-            <span className="text-[#00d4ff]">dev</span>
+            <span className="text-[#ff4b60]">dev</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -65,10 +65,10 @@ const Header = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="text-sm font-medium text-gray-300 hover:text-[#00d4ff] transition-colors duration-300 relative group"
+                className="text-sm font-medium text-gray-300 hover:text-[#ff0844] transition-colors duration-300 relative group"
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#00d4ff] transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#ff0844] transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </nav>
@@ -80,7 +80,7 @@ const Header = () => {
               e.preventDefault();
               scrollToSection('#contact');
             }}
-            className="hidden md:block px-5 py-2 border-2 border-[#00d4ff] text-[#00d4ff] rounded-full text-sm font-semibold hover:bg-[#00d4ff] hover:text-white transition-all duration-300"
+            className="hidden md:block px-5 py-2 border-2 border-[#ff0844] text-[#ff0844] rounded-full text-sm font-semibold hover:bg-[#ff0844] hover:text-white transition-all duration-300"
           >
             Contact
           </a>
@@ -106,7 +106,7 @@ const Header = () => {
                     e.preventDefault();
                     scrollToSection(item.href);
                   }}
-                  className="text-gray-300 hover:text-[#00d4ff] transition-colors duration-300 py-2"
+                  className="text-gray-300 hover:text-[#ff0844] transition-colors duration-300 py-2"
                 >
                   {item.label}
                 </a>

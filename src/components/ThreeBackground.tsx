@@ -35,15 +35,15 @@ const ThreeBackground = () => {
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
     scene.add(ambientLight);
 
-    const pointLight1 = new THREE.PointLight(0x00d4ff, 1, 100);
+    const pointLight1 = new THREE.PointLight(0xff0844, 1.2, 100);
     pointLight1.position.set(10, 10, 10);
     scene.add(pointLight1);
 
-    const pointLight2 = new THREE.PointLight(0xff0055, 0.8, 100);
+    const pointLight2 = new THREE.PointLight(0xe61a29, 1.0, 100);
     pointLight2.position.set(-10, -10, 10);
     scene.add(pointLight2);
 
-    const pointLight3 = new THREE.PointLight(0x9d4edd, 0.6, 100);
+    const pointLight3 = new THREE.PointLight(0xffb199, 0.8, 100);
     pointLight3.position.set(0, 10, -10);
     scene.add(pointLight3);
 
@@ -58,7 +58,7 @@ const ThreeBackground = () => {
       new THREE.SphereGeometry(1, 32, 32),
     ];
 
-    const colors = [0x00d4ff, 0xff0055, 0x9d4edd, 0x00ff88, 0xffaa00, 0xff00aa];
+    const colors = [0xff0844, 0xe61a29, 0xff4b60, 0xffffff, 0xffb199, 0xcc0033];
 
     // Create multiple floating shapes
     for (let i = 0; i < 15; i++) {

@@ -36,12 +36,12 @@ function App() {
 
   if (isLoading) {
     return (
-      <div className="fixed inset-0 bg-[#0a0a1a] flex items-center justify-center z-50">
+      <div className="fixed inset-0 bg-[#060002] flex items-center justify-center z-50">
         <div className="text-center">
           <div className="loader mx-auto mb-6" />
           <h2 className="text-2xl font-bold text-white mb-2">
             Fahad<span className="text-[#ff0844]">.</span>
-            <span className="text-[#00d4ff]">dev</span>
+            <span className="text-[#ff4b60]">dev</span>
           </h2>
           <p className="text-gray-400 text-sm">Loading experience...</p>
         </div>

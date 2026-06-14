@@ -42,9 +42,9 @@ const About = () => {
   ];
 
   const techHighlights = [
-    { icon: Cpu, label: 'AI-Assisted Development', color: '#00d4ff' },
-    { icon: Code2, label: 'MERN Stack', color: '#ff0055' },
-    { icon: Zap, label: 'Fast Delivery', color: '#9d4edd' },
+    { icon: Cpu, label: 'AI-Assisted Development', color: '#ff4b60' },
+    { icon: Code2, label: 'MERN Stack', color: '#ff0844' },
+    { icon: Zap, label: 'Fast Delivery', color: '#e61a29' },
   ];
 
   return (
@@ -65,7 +65,7 @@ const About = () => {
           <div ref={contentRef} className="opacity-0">
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">
               MERN Stack Developer &{' '}
-              <span className="text-[#00d4ff]">AI-Enhanced</span> Solutions
+              <span className="text-[#ff0844]">AI-Enhanced</span> Solutions
               Architect
             </h3>
 
@@ -78,7 +78,7 @@ const About = () => {
             </p>
 
             {/* Education Card */}
-            <div className="glass rounded-xl p-6 mb-8 border-l-4 border-[#00d4ff]">
+            <div className="glass rounded-xl p-6 mb-8 border-l-4 border-[#ff0844]">
               <h4 className="text-lg font-semibold text-white mb-2 flex items-center gap-2">
                 <span className="text-2xl">🎓</span> Education
               </h4>
@@ -102,8 +102,8 @@ const About = () => {
                   key={index}
                   className="flex items-center gap-3 text-gray-300"
                 >
-                  <span className="w-6 h-6 rounded-full bg-[#00d4ff]/20 flex items-center justify-center flex-shrink-0">
-                    <Check size={14} className="text-[#00d4ff]" />
+                  <span className="w-6 h-6 rounded-full bg-[#ff0844]/20 flex items-center justify-center flex-shrink-0">
+                    <Check size={14} className="text-[#ff0844]" />
                   </span>
                   {item}
                 </li>
@@ -131,33 +131,47 @@ const About = () => {
           <div ref={imageRef} className="flex justify-center opacity-0">
             <div className="relative">
               {/* Background Glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#00d4ff]/30 via-[#ff0055]/20 to-[#9d4edd]/30 blur-3xl rounded-full" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#ff0844]/25 via-[#ff4b60]/15 to-[#e61a29]/25 blur-3xl rounded-full" />
 
-              {/* Main Image */}
-              <div className="relative w-72 h-72 sm:w-80 sm:h-80 rounded-2xl overflow-hidden border-2 border-white/10 float-element">
+              {/* Main Image with Hover Effect */}
+              <div className="relative w-72 h-72 sm:w-80 sm:h-80 rounded-2xl overflow-hidden border-2 border-white/10 float-element group cursor-pointer shadow-2xl shadow-red-950/20">
+                {/* Real photo shown on hover */}
                 <img
                   src="/fahad.jpg"
-                  alt="Fahad Ali"
-                  className="w-full h-full object-cover"
+                  alt="Fahad Ali Real"
+                  className="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out scale-105 group-hover:scale-100 opacity-0 group-hover:opacity-100 z-10"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop';
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                
+                {/* Stylized AI-generated red background photo (default) */}
+                <img
+                  src="/intro-poster.png"
+                  alt="Fahad Ali Stylized"
+                  className="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out opacity-100 group-hover:opacity-0"
+                />
+                
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-20 pointer-events-none" />
+                
+                {/* Tooltip Overlay */}
+                <div className="absolute bottom-4 left-0 right-0 text-center z-30 opacity-100 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none">
+                  <span className="px-3 py-1 text-xs rounded-full bg-black/70 border border-white/10 text-gray-300 backdrop-blur-sm">Hover to reveal photo</span>
+                </div>
               </div>
 
               {/* Floating Stats */}
-              <div className="absolute -top-4 -right-4 glass px-4 py-3 rounded-xl">
-                <div className="text-2xl font-bold text-[#00d4ff]">1+</div>
+              <div className="absolute -top-4 -right-4 glass px-4 py-3 rounded-xl z-30">
+                <div className="text-2xl font-bold text-[#ff4b60]">1+</div>
                 <div className="text-xs text-gray-400">Years Experience</div>
               </div>
 
               <div
-                className="absolute -bottom-4 -left-4 glass px-4 py-3 rounded-xl"
+                className="absolute -bottom-4 -left-4 glass px-4 py-3 rounded-xl z-30"
                 style={{ animation: 'float 5s ease-in-out infinite 0.5s' }}
               >
-                <div className="text-2xl font-bold text-[#ff0055]">10+</div>
+                <div className="text-2xl font-bold text-[#ff0844]">10+</div>
                 <div className="text-xs text-gray-400">Projects Built</div>
               </div>
             </div>

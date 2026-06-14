@@ -229,19 +229,19 @@ const Contact = () => {
               <a
                 key={index}
                 href={item.href}
-                className="flex items-start gap-4 glass rounded-xl p-6 hover:border-[#00d4ff]/50 transition-all duration-300 group"
+                className="flex items-start gap-4 glass rounded-xl p-6 hover:border-[#ff0844]/50 transition-all duration-300 group"
               >
-                <div className="w-12 h-12 rounded-lg bg-[#00d4ff]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#00d4ff]/20 transition-colors duration-300">
+                <div className="w-12 h-12 rounded-lg bg-[#ff0844]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#ff0844]/20 transition-colors duration-300">
                   <item.icon
                     size={20}
-                    className="text-[#00d4ff] group-hover:scale-110 transition-transform duration-300"
+                    className="text-[#ff0844] group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
                 <div>
                   <h4 className="text-sm font-medium text-gray-400 mb-1">
                     {item.label}
                   </h4>
-                  <p className="text-white font-medium group-hover:text-[#00d4ff] transition-colors duration-300">
+                  <p className="text-white font-medium group-hover:text-[#ff4b60] transition-colors duration-300">
                     {item.value}
                   </p>
                 </div>

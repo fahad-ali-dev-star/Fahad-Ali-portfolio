@@ -3,34 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --primary-3d: #00d4ff;
-  --secondary-3d: #ff0055;
-  --accent-3d: #9d4edd;
-  --dark-3d: #0a0a1a;
-  --light-3d: #f0f0ff;
+  --primary-3d: #ff0844;
+  --secondary-3d: #e61a29;
+  --accent-3d: #ff4b60;
+  --dark-3d: #060002;
+  --light-3d: #fbfbff;
   --accent-color: #ffb199;
   --accent-color2: #ff0844;
   
   --radius: 0.625rem;
-  --background: 240 10% 4%;
+  --background: 345 20% 3%;
   --foreground: 0 0% 98%;
-  --card: 240 10% 6%;
+  --card: 345 15% 5%;
   --card-foreground: 0 0% 98%;
-  --popover: 240 10% 6%;
+  --popover: 345 15% 5%;
   --popover-foreground: 0 0% 98%;
   --primary: 0 0% 98%;
-  --primary-foreground: 240 6% 10%;
-  --secondary: 240 4% 16%;
+  --primary-foreground: 345 20% 10%;
+  --secondary: 345 10% 12%;
   --secondary-foreground: 0 0% 98%;
-  --muted: 240 4% 16%;
-  --muted-foreground: 240 5% 65%;
-  --accent: 240 4% 16%;
+  --muted: 345 10% 12%;
+  --muted-foreground: 345 10% 65%;
+  --accent: 345 10% 12%;
   --accent-foreground: 0 0% 98%;
-  --destructive: 0 63% 31%;
+  --destructive: 0 85% 40%;
   --destructive-foreground: 0 0% 98%;
-  --border: 240 4% 16%;
-  --input: 240 4% 16%;
-  --ring: 240 5% 84%;
+  --border: 345 10% 15%;
+  --input: 345 10% 15%;
+  --ring: 345 80% 50%;
 }
 
 * {
@@ -45,10 +45,22 @@ html {
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #16213e 100%);
+  background: linear-gradient(135deg, #060002 0%, #150104 50%, #260208 100%);
   min-height: 100vh;
   color: #fff;
   overflow-x: hidden;
+}
+
+/* Hide browser native video player play/pause overlays */
+video::-webkit-media-controls,
+video::-webkit-media-controls-start-playback-button,
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-panel,
+video::-webkit-media-controls-panel-container {
+  display: none !important;
+  -webkit-appearance: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 /* 3D Canvas Container */
@@ -70,20 +82,20 @@ body {
 
 /* Glass Effect */
 .glass {
-  background: rgba(20, 20, 40, 0.7);
+  background: rgba(15, 5, 8, 0.75);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* Glow Text */
 .glow-text {
-  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5), 0 0 40px rgba(0, 212, 255, 0.3);
+  text-shadow: 0 0 20px rgba(255, 8, 68, 0.6), 0 0 40px rgba(255, 8, 68, 0.3);
 }
 
 /* Gradient Text */
 .gradient-text {
-  background: linear-gradient(90deg, #ffb199, #ff0844);
+  background: linear-gradient(90deg, #ffffff, #ff4b60, #ff0844);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -101,8 +113,8 @@ body {
 
 /* Card 3D Effect */
 .card-3d {
-  background: rgba(20, 20, 40, 0.8);
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  background: rgba(15, 5, 8, 0.85);
+  border: 1px solid rgba(255, 8, 68, 0.2);
   border-radius: 16px;
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   position: relative;
@@ -116,7 +128,7 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.1), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 8, 68, 0.15), transparent);
   transition: 0.5s;
 }
 
@@ -126,13 +138,13 @@ body {
 
 .card-3d:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(255, 8, 68, 0.25);
   border-color: var(--primary-3d);
 }
 
 /* Button Styles */
 .btn-primary {
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(0, 212, 255, 0.05));
+  background: linear-gradient(135deg, rgba(255, 8, 68, 0.2), rgba(255, 8, 68, 0.05));
   border: 2px solid var(--primary-3d);
   color: var(--primary-3d);
   padding: 1rem 2.5rem;
@@ -146,7 +158,7 @@ body {
   background: var(--primary-3d);
   color: #fff;
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 8, 68, 0.4);
 }
 
 /* Scroll Progress Bar */
@@ -155,7 +167,7 @@ body {
   top: 0;
   left: 0;
   height: 3px;
-  background: linear-gradient(90deg, #00d4ff, #ff0055, #9d4edd);
+  background: linear-gradient(90deg, #ff0844, #e61a29, #ff4b60);
   z-index: 1000;
   transition: width 0.1s ease;
 }
@@ -180,7 +192,7 @@ body {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(180deg, #00d4ff, #ff0055);
+  background: linear-gradient(180deg, #ff0844, #ff4b60);
   transform: translateX(-50%);
 }
 
@@ -206,7 +218,7 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(135deg, #ff0055, #9d4edd);
+  background: linear-gradient(135deg, #ff0844, #e61a29);
   color: white;
   padding: 0.5rem 1.2rem;
   border-radius: 20px;
@@ -217,28 +229,28 @@ body {
 
 .timeline-content {
   width: calc(50% - 2rem);
-  background: rgba(20, 20, 40, 0.8);
+  background: rgba(15, 5, 8, 0.85);
   padding: 1.8rem;
   border-radius: 16px;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   transition: all 0.3s ease;
 }
 
 .timeline-content:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 212, 255, 0.15);
+  box-shadow: 0 15px 30px rgba(255, 8, 68, 0.2);
 }
 
 /* Tech Badge */
 .tech-badge {
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(0, 212, 255, 0.05));
-  color: var(--primary-3d);
+  background: linear-gradient(135deg, rgba(255, 8, 68, 0.15), rgba(255, 8, 68, 0.05));
+  color: var(--accent-3d);
   padding: 0.5rem 1rem;
   border-radius: 25px;
   font-size: 0.85rem;
   font-weight: 500;
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  border: 1px solid rgba(255, 8, 68, 0.2);
   transition: all 0.3s ease;
 }
 
@@ -263,7 +275,7 @@ body {
 .form-input:focus {
   outline: none;
   border-color: var(--primary-3d);
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+  box-shadow: 0 0 20px rgba(255, 8, 68, 0.25);
 }
 
 .form-input::placeholder {
@@ -286,7 +298,12 @@ body {
   }
   
   .timeline-date {
-    left: 0;
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-left: 4rem;
+    display: inline-block;
+    margin-bottom: 0.75rem;
     transform: none;
   }
   
@@ -320,7 +337,7 @@ body {
 .loader {
   width: 50px;
   height: 50px;
-  border: 3px solid rgba(0, 212, 255, 0.3);
+  border: 3px solid rgba(255, 8, 68, 0.3);
   border-top-color: var(--primary-3d);
   border-radius: 50%;
   animation: spin 1s linear infinite;

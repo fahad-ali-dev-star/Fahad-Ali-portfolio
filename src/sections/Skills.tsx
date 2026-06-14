@@ -30,7 +30,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: 'Frontend',
     icon: Layout,
-    color: '#00d4ff',
+    color: '#ff0844',
     skills: [
       { name: 'React', icon: Code2 },
       { name: 'Vue.js', icon: Layout },
@@ -43,7 +43,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: 'Backend',
     icon: Server,
-    color: '#ff0055',
+    color: '#e61a29',
     skills: [
       { name: 'Node.js', icon: Server },
       { name: 'Express', icon: Code2 },
@@ -56,7 +56,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: 'Database',
     icon: Database,
-    color: '#9d4edd',
+    color: '#ff4b60',
     skills: [
       { name: 'MongoDB', icon: Database },
       { name: 'PostgreSQL', icon: Database },
@@ -68,7 +68,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: 'AI Tools',
     icon: Bot,
-    color: '#00ff88',
+    color: '#ffb199',
     skills: [
       { name: 'DeepSeek', icon: Bot },
       { name: 'Git', icon: GitBranch },
@@ -80,7 +80,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: 'Workflow',
     icon: Workflow,
-    color: '#ffaa00',
+    color: '#fbfbff',
     skills: [
       { name: 'Rapid Prototyping', icon: Zap },
       { name: 'AI-Assisted Dev', icon: Bot },

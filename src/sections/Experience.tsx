@@ -102,7 +102,7 @@ const Experience = () => {
                 <h3 className="text-xl font-bold text-white mb-1">
                   {exp.title}
                 </h3>
-                <h4 className="text-[#00d4ff] font-medium mb-3">
+                <h4 className="text-[#ff4b60] font-medium mb-3">
                   {exp.company}
                 </h4>
                 <p className="text-gray-400 text-sm leading-relaxed mb-3">
@@ -113,7 +113,7 @@ const Experience = () => {
                     {exp.tech.split(',').map((tech, i) => (
                       <span
                         key={i}
-                        className="text-xs px-2 py-1 rounded-full bg-[#00d4ff]/10 text-[#00d4ff] border border-[#00d4ff]/30"
+                        className="text-xs px-2 py-1 rounded-full bg-[#ff0844]/10 text-[#ff4b60] border border-[#ff0844]/30"
                       >
                         {tech.trim()}
                       </span>
