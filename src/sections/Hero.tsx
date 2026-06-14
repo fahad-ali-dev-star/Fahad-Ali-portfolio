@@ -147,7 +147,6 @@ const Hero = () => {
             src="/intro-video.mp4"
             poster="/intro-poster.png"
             playsInline
-            webkitPlaysInline
             muted={isMuted}
             className="w-full h-full object-cover pointer-events-none"
             style={{ opacity: videoReady ? 1 : 0, transition: 'opacity 0.8s ease' }}
