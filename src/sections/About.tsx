@@ -70,10 +70,10 @@ const About = () => {
             </h3>
 
             <p className="text-gray-400 text-lg mb-6 leading-relaxed">
-              Full Stack Developer specializing in MERN stack applications
+              Full Stack Developer learning and specializing in MERN stack applications
               enhanced with artificial intelligence. I build modern web
               solutions using MongoDB, Express, React, and Node.js while
-              leveraging AI tools like DeepSeek, ChatGPT, and Gemini to
+              leveraging AI tools like DeepSeek, ChatGPT,Claude.ai and Gemini to
               accelerate development and integrate intelligent features.
             </p>
 

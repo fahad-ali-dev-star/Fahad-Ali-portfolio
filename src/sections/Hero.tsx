@@ -232,7 +232,7 @@ const Hero = () => {
             className="text-base sm:text-lg font-semibold tracking-wide mb-4"
             style={{ color: '#ff4b60' }}
           >
-            MERN Stack &nbsp;·&nbsp; AI Integration &nbsp;·&nbsp; Clean Code
+            Learning MERN Stack &nbsp;·&nbsp; AI Integration &nbsp;·&nbsp; Clean Code
           </p>
 
           {/* Description */}

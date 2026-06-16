@@ -15,6 +15,15 @@ interface Project {
 }
 
 const projects: Project[] = [
+   {
+    title: 'Student Result Management System',
+    description:
+      'A comprehensive web application for managing student results, featuring secure authentication, dynamic result generation, and an intuitive user interface. Built with React and Supabase for real-time data handling.',
+    image: 'https://images.unsplash.com/photo-1577896851231-70ef18881754?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHN0dWRlbnRzfGVufDB8fDB8fHwww=600',
+    liveUrl: 'https://student-result-management-system-kappa.vercel.app/',
+    githubUrl: 'https://github.com/fahad-ali-dev-star/student-result-management-system',
+    tech: ['Next.js', 'Supabase', 'Tailwind CSS',' clerk'],
+  },
   {
     title: 'E-Commerce Platform',
     description:
@@ -22,35 +31,35 @@ const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600',
     liveUrl: 'https://lumina-luxe-e-commerce.vercel.app',
     githubUrl: 'https://github.com/fahad-ali-dev-star/lumina-luxe-e-commerce',
-    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe'],
+    tech: ['React', 'Node.js', 'Express'],
   },
-  {
-    title: 'TaskFlow - Project Management',
-    description:
-      'Collaborative task management platform with real-time updates, team collaboration features, and advanced analytics. Used by 500+ active users.',
-    image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600',
-    liveUrl: 'https://taskflow-pr.vercel.app',
-    githubUrl: 'https://github.com/fahad-ali-dev-star/taskflow-pr',
-    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.io'],
-  },
-  {
-    title: 'FitTracker Pro',
-    description:
-      'Comprehensive health and fitness mobile app with workout tracking, nutrition planning, and social features. Available on iOS and Android.',
-    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600',
-    liveUrl: 'https://fittracker-pro-nu.vercel.app/',
-    githubUrl: 'https://github.com/fahad-ali-dev-star/fittracker-pro',
-    tech: ['React Native', 'Node.js', 'MongoDB', 'Express'],
-  },
-  {
-    title: 'AI Assistant Platform',
-    description:
-      'Intelligent chatbot platform with natural language processing, machine learning integration, and multi-platform deployment capabilities.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600',
-    liveUrl: 'https://nova-ai-intelligence-platform-ptwhea2kj.vercel.app',
-    githubUrl: 'https://github.com/fahad-ali-dev-star/nova-ai---intelligence-platform',
-    tech: ['React', 'Python', 'FastAPI', 'MongoDB', 'TensorFlow'],
-  },
+  // {
+  //   title: 'TaskFlow - Project Management',
+  //   description:
+  //     'Collaborative task management platform with real-time updates, team collaboration features, and advanced analytics. Used by 500+ active users.',
+  //   image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600',
+  //   liveUrl: 'https://taskflow-pr.vercel.app',
+  //   githubUrl: 'https://github.com/fahad-ali-dev-star/taskflow-pr',
+  //   tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.io'],
+  // },
+  // {
+  //   title: 'FitTracker Pro',
+  //   description:
+  //     'Comprehensive health and fitness mobile app with workout tracking, nutrition planning, and social features. Available on iOS and Android.',
+  //   image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600',
+  //   liveUrl: 'https://fittracker-pro-nu.vercel.app/',
+  //   githubUrl: 'https://github.com/fahad-ali-dev-star/fittracker-pro',
+  //   tech: ['React Native', 'Node.js', 'MongoDB', 'Express'],
+  // },
+  // {
+  //   title: 'AI Assistant Platform',
+  //   description:
+  //     'Intelligent chatbot platform with natural language processing, machine learning integration, and multi-platform deployment capabilities.',
+  //   image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600',
+  //   liveUrl: 'https://nova-ai-intelligence-platform-ptwhea2kj.vercel.app',
+  //   githubUrl: 'https://github.com/fahad-ali-dev-star/nova-ai---intelligence-platform',
+  //   tech: ['React', 'Python', 'FastAPI', 'MongoDB', 'TensorFlow'],
+  // },
   {
     title: 'Fast Food Restaurant',
     description:
@@ -58,7 +67,7 @@ const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600',
     liveUrl: 'https://fahad-ali-dev-star.github.io/Resturent-wesite/',
     githubUrl: 'https://github.com/fahad-ali-dev-star/Resturent-wesite',
-    tech: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'Express'],
+    tech: ['HTML5', 'CSS3', 'JavaScript'],
   },
   {
     title: 'Personal Portfolio Website',
@@ -67,7 +76,16 @@ const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600',
     liveUrl: 'https://fahad-ali-dev-star.github.io/shahid-portfolio/',
     githubUrl: 'https://github.com/fahad-ali-dev-star/shahid-portfolio',
-    tech: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'Three.js'],
+    tech: ['HTML5', 'CSS3', 'JavaScript'],
+  },
+  {
+        title: 'Weather App',
+    description:
+      'Modern, responsive weather app with 3D animations, interactive elements, and smooth scrolling. ',
+    image: 'https://images.unsplash.com/photo-1501973801540-537f08ccae7b?w=600',
+    liveUrl: 'https://fahad-ali-dev-star.github.io/weather-app/',
+    githubUrl: 'https://github.com/fahad-ali-dev-star/weather-app',
+    tech: ['HTML5', 'CSS3', 'JavaScript'],
   },
 ];
 

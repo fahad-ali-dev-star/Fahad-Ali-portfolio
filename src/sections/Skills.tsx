@@ -7,12 +7,12 @@ import {
   Workflow,
   Layout,
   FileCode,
-  Globe,
   Layers,
   Cpu,
   GitBranch,
   Cog,
   Zap,
+  Globe,
 } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -33,7 +33,6 @@ const skillCategories: SkillCategory[] = [
     color: '#ff0844',
     skills: [
       { name: 'React', icon: Code2 },
-      { name: 'Vue.js', icon: Layout },
       { name: 'JavaScript', icon: FileCode },
       { name: 'TypeScript', icon: FileCode },
       { name: 'HTML5/CSS3', icon: Globe },
@@ -48,9 +47,8 @@ const skillCategories: SkillCategory[] = [
       { name: 'Node.js', icon: Server },
       { name: 'Express', icon: Code2 },
       { name: 'Python', icon: FileCode },
-      { name: 'Django', icon: Globe },
-      { name: 'REST APIs', icon: Globe },
-      { name: 'GraphQL', icon: Code2 },
+      // { name: 'Django', icon: Globe },
+      // { name: 'REST APIs', icon: Globe },
     ],
   },
   {
@@ -60,9 +58,8 @@ const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'MongoDB', icon: Database },
       { name: 'PostgreSQL', icon: Database },
-      { name: 'MySQL', icon: Database },
+      { name: 'Supabase', icon: Globe },
       { name: 'Firebase', icon: Globe },
-      { name: 'Redis', icon: Cpu },
     ],
   },
   {
@@ -73,7 +70,7 @@ const skillCategories: SkillCategory[] = [
       { name: 'DeepSeek', icon: Bot },
       { name: 'Git', icon: GitBranch },
       { name: 'ChatGPT', icon: Bot },
-      { name: 'CI/CD', icon: Cog },
+      { name: 'Claude', icon: Bot },
       { name: 'AI API Integration', icon: Globe },
     ],
   },
