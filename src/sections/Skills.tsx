@@ -8,7 +8,6 @@ import {
   Layout,
   FileCode,
   Layers,
-  Cpu,
   GitBranch,
   Cog,
   Zap,
