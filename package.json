@@ -40,6 +40,8 @@
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.5.0",
     "@types/three": "^0.182.0",
+    "baseline-browser-mapping": "^2.10.37",
+    "caniuse-lite": "^1.0.30001799",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",

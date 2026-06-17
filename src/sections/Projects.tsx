@@ -33,15 +33,15 @@ const projects: Project[] = [
     githubUrl: 'https://github.com/fahad-ali-dev-star/lumina-luxe-e-commerce',
     tech: ['React', 'Node.js', 'Express'],
   },
-  // {
-  //   title: 'TaskFlow - Project Management',
-  //   description:
-  //     'Collaborative task management platform with real-time updates, team collaboration features, and advanced analytics. Used by 500+ active users.',
-  //   image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600',
-  //   liveUrl: 'https://taskflow-pr.vercel.app',
-  //   githubUrl: 'https://github.com/fahad-ali-dev-star/taskflow-pr',
-  //   tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.io'],
-  // },
+  {
+    title: 'SAAS - School Management ERP System',
+    description:
+      'Comprehensive SAAS ERP system for schools, featuring student management, attendance tracking, fee management, and real-time analytics. Built with Next.js and Supabase for seamless performance.',
+    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600',
+    liveUrl: 'https://school-managment-system-gules.vercel.app/',
+    githubUrl: 'https://github.com/fahad-ali-dev-star/school-managment-system',
+    tech: ['Next.js', 'Supabase', 'Tailwind CSS'],
+  },
   // {
   //   title: 'FitTracker Pro',
   //   description:
